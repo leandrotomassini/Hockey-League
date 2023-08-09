@@ -1,89 +1,71 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Mighty Ducks Hockey League</title>
     <link rel="icon" href="./assets/img/favicon.png" type="image/png">
-    <!-- <link rel="stylesheet" href="./css/style1.css"> -->
-    <link rel="stylesheet" href="./css/style2.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <title>About | Mighty Ducks Hockey League</title>
 </head>
 
 <body>
-    <header>
-        <div class="header__banner">
-            <h1>Mighty Ducks Hockey League</h1>
-            <img src="./assets/img/design1_image1.jpg" alt="Banner Mighty Ducks Hockey League"
-                class="header__bannerImg">
-        </div>
-
-        <section class="header__banner-upcoming-events">
-            <h2>About MDHL</h2>
-            <div class="header__banner-upcoming-events__img-container">
-                <img src="./assets/img/logo.png" alt="Logo Mighty Ducks Hockey League"
-                    class="header__banner-upcoming-events__img">
-            </div>
-        </section>
-
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">About MDHL</a></li>
+                <li class="nav__item"><a href="rules.html" class="nav__link">Rules</a></li>
+                <li class="nav__item nav__item--logo">
+                    <a href="index.html" class="nav__logo-link">
+                        <img src="./assets/img/logo.png" alt="MDHL Logo" class="nav__logo">
+                    </a>
+                </li>
+                <li class="nav__item"><a href="information.html" class="nav__link">Game information</a></li>
+                <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
 
-        <aside class="main__aside__menu">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">About MDHL</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
-        <section class="main__upcoming-events">
+        <section class="upcoming-events">
+            About MDHL
+        </section>
 
-            <div class="main__upcoming-events__logo-container">
-                <img src="./assets/img/logo.png" alt="Logo Mighty Ducks Hockey League"
-                    class="main__upcoming-events__logo-container__img">
-            </div>
+        <section class="content">
+            <ul class="event-list-information">
+                <li class="list-item">
+                    <img src="./assets/img/hockey-2.jpg" alt="Hockey image" class="event-list-information__img">
+                    <h3 class="event-date-information">Mision</h3>
+                    <p class="event-title">
+                        To support young athletes living Chicago's northside neighborhood, who have an interest in
+                        learning and playing soccer, with opportunities to learn and practice skills related to the game
+                        of
+                        hockey, specifically those skills around team cooperation and good sportsmanship
+                    </p>
+                </li>
+                <li class="list-item">
+                    <img src="./assets/img/hockey-3.jpg" alt="Hockey image" class="event-list-information__img">
+                    <h3 class="event-date-information">Vision</h3>
+                    <p class="event-title">
+                        The Mighty Ducks Hockey League aspires to develop strong, well-rounded and mindful athletes
+                        through the building of character, self-discipline, and leadership.
+                    </p>
+                </li>
+                <li class="list-item">
+                    <img src="./assets/img/hockey-1.jpg" alt="Hockey image" class="event-list-information__img">
+                    <h3 class="event-date-information">General Information</h3>
+                    <p class="event-title">
+                        The Mighty Ducks Soccer League was established in 1996 to provide athletes residing
+                        Chicago's northside neighborhoods an environment in which to learn and play hockey. To be a
+                        member of MDHL, you must be between the ages of 4 - 12 and reside a Chicago northside
+                        neighborhood. MDHL ran by o small full-time staff, and relies on the generous volunteer time of
+                        parents and previous league members
+                    </p>
+                </li>
 
-
-            <nav>
-                <ul>
-                    <li>
-                        <h3>Mision</h3>
-                        <span>
-                            To support young athletes living Chicago's northside neighborhood, who have an interest in
-                            learning and playing soccer, with opportunities to learn and practice skills related to the
-                            game of
-                            hockey, specifically those skills around team cooperation and good sportsmanship
-                        </span>
-                    </li>
-                    <li>
-                        <h3>Vision</h3>
-                        <span>
-                            The Mighty Ducks Hockey League aspires to develop strong, well-rounded and mindful
-                            athletes
-                            through the building of character, self-discipline, and leadership.
-                        </span>
-                    </li>
-                    <li>
-                        <h3>General Information</h3>
-                        <span>The Mighty Ducks Soccer League was established in 1996 to provide athletes residing
-                            Chicago's northside neighborhoods an environment in which to learn and play hockey. To be a
-                            member of MDHL, you must be between the ages of 4 - 12 and reside a Chicago northside
-                            neighborhood. MDHL ran by o small full-time staff, and relies on the generous volunteer time
-                            of
-                            parents and previous league members
-                        </span>
-                    </li>
-                </ul>
-            </nav>
-            
+            </ul>
         </section>
     </main>
 </body>

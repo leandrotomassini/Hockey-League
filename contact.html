@@ -1,58 +1,46 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Mighty Ducks Hockey League</title>
     <link rel="icon" href="./assets/img/favicon.png" type="image/png">
-    <!-- <link rel="stylesheet" href="./css/style1.css"> -->
-    <link rel="stylesheet" href="./css/style2.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <title>Contact | Mighty Ducks Hockey League</title>
 </head>
 
 <body>
-    <header>
-        <div class="header__banner">
-            <h1>Mighty Ducks Hockey League</h1>
-            <img src="./assets/img/design1_image1.jpg" alt="Banner Mighty Ducks Hockey League"
-                class="header__bannerImg">
-        </div>
-
-        <section class="header__banner-upcoming-events">
-            <h2>Contact</h2>
-            <div class="header__banner-upcoming-events__img-container">
-                <img src="./assets/img/logo.png" alt="Logo Mighty Ducks Hockey League"
-                    class="header__banner-upcoming-events__img">
-            </div>
-        </section>
-
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link">About MDHL</a></li>
+                <li class="nav__item"><a href="rules.html" class="nav__link">Rules</a></li>
+                <li class="nav__item nav__item--logo">
+                    <a href="index.html" class="nav__logo-link">
+                        <img src="./assets/img/logo.png" alt="MDHL Logo" class="nav__logo">
+                    </a>
+                </li>
+                <li class="nav__item"><a href="information.html" class="nav__link">Game information</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
 
-        <aside class="main__aside__menu">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About MDHL</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
-        <section class="main__upcoming-events">
-            
-            <div class="main__upcoming-events__logo-container">
-                <img src="./assets/img/logo.png" alt="Logo Mighty Ducks Hockey League"
-                    class="main__upcoming-events__logo-container__img">
-            </div>
+        <section class="upcoming-events">
+            Contact
+        </section>
 
-            <p>Please email us at <a href="mailto:mdhl@chihockey.org">mdhl@chihockey.org</a><br>
-                We reply to your email as soon as we can.</p>
+        <section class="content">
+            <div class="image-section">
+                <img src="./assets/img/hockey-1.jpg" alt="Hockey Image" class="hockey-image">
+            </div>
+            <p>
+                Please email us at <a href="mailto:mdhl@chihockey.org">mdhl@chihockey.org</a>
+                We reply to your email as soon as we can.
+            </p>
         </section>
     </main>
 </body>
