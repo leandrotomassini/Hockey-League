@@ -1,158 +1,296 @@
-html,
-body,
-h1,
-h2,
-h3,
-p,
-ul,
-li,
-a,
-img {
+/* Reset de estilos */
+*:after,
+*:before,
+* {
+    border: 0;
+    font: inherit;
     margin: 0;
     padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
 }
 
+/* Estilos globales */
+a {
+    color: white;
+    text-decoration: none;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
     background-color: #F0F0F0;
+    font-family: 'Roboto', sans-serif;
 }
 
+/* Encabezado */
 .header {
-    width: 100%;
-    height: 400px;
-    background-image: linear-gradient(rgba(1, 1, 4, 0.6), rgba(1, 1, 4, 0.6)), url('../assets/img/design1_image1.jpg');
-    background-size: cover;
+    align-items: center;
+    background-image: linear-gradient(rgba(1, 1, 4, 0.6), rgba(1, 1, 4, 0.6)),
+        url('../assets/img/design1_image1.jpg');
     background-position: center;
+    background-size: cover;
     display: flex;
+    height: 400px;
     justify-content: center;
-    align-items: center;
 }
 
-.nav__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-}
-
+/* Navegación */
 .nav__item {
     list-style: none;
     margin: 0 15px;
 }
 
 .nav__link {
-    color: white;
-    text-decoration: none;
     font-size: 18px;
     position: relative;
+    text-decoration: none;
 }
 
 .nav__link::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 100%;
-    height: 2px;
     background-color: #F7E02E;
+    bottom: -5px;
+    content: '';
+    height: 2px;
+    left: 0;
+    position: absolute;
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.2s ease-in-out;
+    width: 100%;
 }
 
 .nav__link:hover::after {
     transform: scaleX(1);
 }
 
-.nav__logo {
-    width: 200px;
-    height: 200px;
-}
-
-.upcoming-events {
-    width: 100%;
-    color: white;
-    background-color: black;
-    height: 50px;
-    display: flex;
+.nav__list {
     align-items: center;
-    justify-content: center;
+    display: flex;
+    flex-direction: row;
     font-weight: bold;
-    font-size: 24px;
-}
-
-.content {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 3%;
-    padding-bottom: 3%;
-}
-
-.image-section {
-    flex: 1;
-}
-
-.hockey-image {
-    width: 100%;
-    max-width: 400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.event-list {
-    list-style: none;
-    font-size: 1.8em;
-    flex: 1;
-}
-
-.event-list-information {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+}
+
+.nav__logo {
+    height: 200px;
+    width: 200px;
+}
+
+/* Próximos eventos */
+.content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    width: 80%;
 }
 
 .event {
-    margin-bottom: 25px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 25px;
 }
 
 .event-date {
     text-decoration: underline;
 }
 
-.event-title {
-    padding-left: 5%;
-    font-size: 25px;
-}
-
 .event-date-center {
     text-align: center;
-}
-
-.list-item {
-    list-style: none;
-    text-align: center;
-    margin-bottom: 50px;
 }
 
 .event-date-information {
     font-size: 40px;
 }
 
+.event-list {
+    flex: 1;
+    font-size: 1.8em;
+    list-style: none;
+}
+
+.event-list-information {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .event-list-information__img {
+    border-radius: 100%;
+    height: 150px;
+    width: 150px;
+}
+
+.event-title {
+    font-size: 25px;
+    padding-left: 5%;
+}
+
+.hockey-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    width: 100%;
+}
+
+.image-section {
+    flex: 1;
+}
+
+.list-item {
+    list-style: none;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* Barra de eventos próximos */
+.upcoming-events {
+    align-items: center;
+    background-color: black;
+    color: white;
+    display: flex;
+    font-size: 24px;
+    font-weight: bold;
+    height: 50px;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Contenido de reglas */
+.section-rules {
+    padding: 20px;
+}
+
+.section-rules h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.section-rules h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.section-rules p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.section-rules strong {
+    font-weight: bold;
+}
+
+/* Estilos de la tarjeta */
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-bottom: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.card strong {
+    font-weight: bold;
+}
+
+/* Estilo adicional para las imágenes con sombra */
+.event-list-information__img-container {
+    display: inline-block;
+    position: relative;
+}
+
+.event-list-information__img {
+    border-radius: 100%;
+    height: 150px;
+    width: 150px;
+    box-shadow: 0px 2px 4px rgba(247, 224, 46, 0.5);
+    /* Sombra dorada */
+}
+
+.section-rules__sub-title,
+.rule-list li {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.section-rules__main-title,
+.section-rules__sub-title,
+.section-rules__paragraph {
+    text-align: center;
+}
+
+.nav__logo__policies__container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav__logo__policies{
     width: 150px;
     height: 150px;
-    border-radius: 100%;
+}
 
+.sub-rule-list li{
+    list-style: none;
+}
+
+/* Tabla de horario */
+.schedule-table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+.schedule-table th,
+.schedule-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.schedule-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Contenedor de información */
+.info-container{
+    width: 80%;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.info-container p{
+    margin-bottom: 15px;
+}
+
+/* Enlace de correo de contacto */
+.contact-email{
+    color: black;
+    text-decoration: underline;
 }
