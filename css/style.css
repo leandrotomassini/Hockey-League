@@ -28,6 +28,11 @@ body {
         'opsz' 48;
 }
 
+.back-link{
+    color: gray;
+    text-decoration: underline;
+}
+
 /* Encabezado */
 .header {
     align-items: center;
@@ -50,7 +55,6 @@ body {
 .nav__link {
     font-size: 18px;
     position: relative;
-    text-decoration: none;
 }
 
 .nav__link::after {
@@ -139,6 +143,17 @@ body {
 
 .event-date-information {
     font-size: 40px;
+}
+
+.info-container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.contact-email{
+    color: black;
+    text-decoration: underline;
 }
 
 .event-list {
@@ -308,26 +323,110 @@ body {
 }
 
 .schedule-table th {
-    background-color: #f2f2f2;
+    background-color: #F7E02E;
     font-weight: bold;
 }
 
-/* Contenedor de información */
-.info-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
+/* Formulario de registro */
+.registration-form {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
-    padding: 10px;
+    padding: 40px;
     width: 80%;
 }
 
-.info-container p {
+.registration-form h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.registration-form h3 {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.registration-form p {
+    font-size: 16px;
     margin-bottom: 15px;
 }
 
-/* Enlace de correo de contacto */
-.contact-email {
-    color: black;
+.registration-form strong {
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group h3{
     text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-group input[type="radio"],
+.form-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.form-group-radio,
+.form-group-radio-grade,
+.form-group-school,
+.form-group-position-play,
+.form-group-uniform {
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-group-radio div,
+.form-group-radio-grade div,
+.form-group-school div,
+.form-group-position-play div,
+.form-group-uniform div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-group-error {
+    color: red;
+    font-size: 14px;
+}
+
+.card-form{
+    border-bottom: 1px solid gray;
+    padding: 20px;
+}
+
+.signature input{
+    margin-bottom: 20px;
+}
+
+.footer-form{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-form a{
+    margin-top: 40px;
 }

@@ -1,64 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="./assets/img/favicon.png" type="image/png">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Mighty Ducks Hockey League</title>
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+	<header class="header">
+		<nav class="nav">
+			<ul class="nav__list">
+				<li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+				<li class="nav__item"><a href="about.html" class="nav__link">About MDHL</a></li>
+				<li class="nav__item"><a href="rules.html" class="nav__link">Rules</a></li>
+				<li class="nav__item nav__item--logo">
+					<a href="index.html" class="nav__logo-link">
+						<img src="./assets/img/logo.png" alt="MDHL Logo" class="nav__logo">
+					</a>
+				</li>
+				<li class="nav__item"><a href="information.html" class="nav__link">Game information</a></li>
+				<li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="upcoming-events">
+			<h1>Registration form</h1>
+		</section>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="./assets/img/favicon.png" type="image/png">
-        <link rel="stylesheet" href="./css/style.css">
-        <title>Mighty Ducks Hockey League</title>
+		<div class="content">
+			<form action="show_data.html" name="registration-form" method="post" class="registration-form">
+				<div class="card-form">
+					
+					<div class="form-group">
+						<a href="index.html" class="back-link"><- Volver</a>
+						<h3>Personal information:</h3>
+						
+						<label for="first-name">Player's First Name</label>
+						<input type="text" name="first-name" id="first-name" placeholder="Write your name here...">
+					</div>
+					<div class="form-group">
+						<label for="last-name">Last Name</label>
+						<input type="text" name="last-name" id="street-address" placeholder="Write your last name here...">
+					</div>
+					<div class="form-group">
+						<label for="street-address">Street Address</label>
+						<input type="text" name="street-address" id="street-address" placeholder="Write your street address here...">
+					</div>
+					<div class="form-group">
+						<label for="city">City</label>
+						<input type="text" name="city" id="city" placeholder="Write your city here...">
+					</div>
+					<div class="form-group">
+						<label for="zip-code">Zip Code</label>
+						<input type="text" name="zip-code" id="zip-code" placeholder="Write your zip code here...">
+					</div>
+					<div class="form-group">
+						<label for="birthdate">Birth Date</label>
+						<input type="date" name="birthdate" id="birthdate" placeholder="mm/dd/yyyy" pattern="\d{2}/\d{2}/\d{4}">
+					</div>
+				</div>
+				<div class="card-form">
 
-        <!-- Google Fonts -->
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    </head>
+					<div class="form-group">
+						<h3>Gender:</h3>
+						<div class="form-group-radio">
+							<div>
+								<label for="female">Female</label>
+								<input type="radio" name="gender" id="female" value="female">
+							</div>
+							<div>
+								<label for="male">Male</label>
+								<input type="radio" name="gender" id="male" value="male">
+							</div>
+						</div>
+					</div>
 
-    <body>
-        <header class="header">
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="about.html" class="nav__link">About
-                            MDHL</a></li>
-                    <li class="nav__item"><a href="rules.html" class="nav__link">Rules</a></li>
-                    <li class="nav__item nav__item--logo">
-                        <a href="index.html" class="nav__logo-link">
-                            <img src="./assets/img/logo.png" alt="MDHL Logo"
-                                class="nav__logo">
-                        </a>
-                    </li>
-                    <li class="nav__item"><a href="information.html"
-                            class="nav__link">Game information</a></li>
-                    <li class="nav__item"><a href="contact.html"
-                            class="nav__link">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="btn-register">
-                <span class="material-symbols-outlined">
-                    sports_hockey
-                </span>
-                Register now
-                <span class="material-symbols-outlined arrow">
-                    arrow_forward_ios
-                </span>
-            </div>
-        </header>
-        <main>
-            <section class="upcoming-events">
-                <h1>
-                    Registration form
-                </h1>
-            </section>
-            <div class="content">
+				</div>
 
-            </div>
-        </main>
-    </body>
+				<div class="card-form">
+					<div class="form-group">
+						<h3>Grade:</h3>
+						<div class="form-group-radio-grade">
+							<div>
+								<label for="pre-school">Pre-School</label>
+								<input type="radio" name="grade" id="pre-school" value="pre-school">
+							</div>
+							<div>
+								<label for="1st">1st</label>
+								<input type="radio" name="grade" id="1st" value="1st">
+							</div>
+							<div>
+								<label for="2nd">2nd</label>
+								<input type="radio" name="grade" id="2nd" value="2nd">
+							</div>
+							<div>
+								<label for="3rd">3rd</label>
+								<input type="radio" name="grade" id="3rd" value="3rd">
+							</div>
+							<div>
+								<label for="4th">4th</label>
+								<input type="radio" name="grade" id="4th" value="4th">
+							</div>
+							<div>
+								<label for="5th">5th</label>
+								<input type="radio" name="grade" id="5th" value="5th">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card-form">
 
+					<div class="form-group">
+						
+						<h3>Closest School</h3>
+						
+						<span>Which elementary school do you live near?</span>
+
+						</br>
+						<div class="form-group-school">
+
+							<div>
+								<label for="aj-katzenmaier">AJ Katzenmaier</label>
+								<input type="radio" name="elementary-school" id="aj-katzenmaier" value="aj-katzenmaier">
+							</div>
+
+							<div>
+								<label for="greenbay">Greenbay</label>
+								<input type="radio" name="elementary-school" id="greenbay" value="greenbay">
+							</div>
+
+							<div>
+								<label for="howard-yeager">Howard A Yeager</label>
+								<input type="radio" name="elementary-school" id="howard-yeager" value="howard-yeager">
+							</div>
+
+							<div>
+								<label for="marjorie-hart">Marjorie P Hart</label>
+								<input type="radio" name="elementary-school" id="marjorie-hart" value="marjorie-hart">
+							</div>
+
+							<div>
+								<label for="north-elementary">North Elementary</label>
+								<input type="radio" name="elementary-school" id="north-elementary" value="north-elementary">
+							</div>
+
+							<div>
+								<label for="south-elementary">South Elementary</label>
+								<input type="radio" name="elementary-school" id="south-elementary" value="south-elementary">
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="card-form">
+
+					<div class="form-group">
+
+						<span>What position(s) do you normally play? (Check all that apply)</span>
+						<div class="form-group-position-play">
+
+							<div>
+								<label for="forward">Forward</label>
+								<input type="checkbox" name="position" id="forward" value="forward">
+							</div>
+
+							<div>
+								<label for="midfield">Midfield</label>
+								<input type="checkbox" name="position" id="midfield" value="midfield">
+							</div>
+
+							<div>
+								<label for="defense">Defense</label>
+								<input type="checkbox" name="position" id="defense" value="defense">
+							</div>
+
+							<div>
+								<label for="goalkeeper">Goalkeeper</label>
+								<input type="checkbox" name="position" id="goalkeeper" value="goalkeeper">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card-form">
+
+					<div class="form-group">
+
+						<h3>Uniform Size:</h3>
+
+						<div class="form-group-uniform">
+
+							<div>
+								<label for="youth-small">Youth Small</label>
+								<input type="radio" name="uniform-size" id="youth-small" value="youth-small">
+							</div>
+
+							<div>
+								<label for="youth-medium">Youth Medium</label>
+								<input type="radio" name="uniform-size" id="youth-medium" value="youth-medium">
+							</div>
+
+							<div>
+								<label for="youth-large">Youth Large</label>
+								<input type="radio" name="uniform-size" id="youth-large" value="youth-large">
+							</div>
+
+							<div>
+								<label for="small">Small</label>
+								<input type="radio" name="uniform-size" id="small" value="small">
+							</div>
+
+							<div>
+								<label for="medium">Medium</label>
+								<input type="radio" name="uniform-size" id="medium" value="medium">
+							</div>
+
+							<div>
+								<label for="large">Large</label>
+								<input type="radio" name="uniform-size" id="large" value="large">
+							</div>
+
+							<div>
+								<label for="extra-large">Extra-Large</label>
+								<input type="radio" name="uniform-size" id="extra-large" value="extra-large">
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+				<div class="card-form">
+
+					<div class="form-group">
+						<h3>Permission to Play</h3>
+						<p>
+							I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury associated with hockey and in consideration for the “League” accepting the registrant for its hockey programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant's participation in the program and/or being transported to or from MDHL sponsored activities, which transportation
+						</p>
+						<p>
+							By signing below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the cancellation policy and agree to its terms.
+						</p>
+						<div class="form-group signature">
+							
+							<label for="Parent">Parent/Guardian Signature:</label>
+							<input type="text" name="Parent" id="parent" placeholder="Write your Parent/Guardian Signature here...">
+							
+							<label for="date">Date</label>
+							<input type="date" name="date" id="date" placeholder="mm/dd/yyyy" pattern="\d{2}/\d{2}/\d{4}">
+						</div>
+						<div class="footer-form">
+							<button type="submit" class="btn-register">Registrarse</button>
+							<a href="index.html" class="back-link"><- Volver y cancelar</a>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</main>
+</body>
 </html>
